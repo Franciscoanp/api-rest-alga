@@ -1,2 +1,2 @@
-3.6
-Cadastrando nova categoria com POST
+3.8
+Validando atributos desconhecidos
