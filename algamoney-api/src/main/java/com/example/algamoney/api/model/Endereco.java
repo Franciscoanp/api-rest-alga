@@ -12,7 +12,7 @@ public class Endereco {
 	private String cep;
 	private String cidade;
 	private String estado;
-	private boolean ativo;
+	
 
 	public String getLogradouro() {
 		return logradouro;
@@ -68,14 +68,6 @@ public class Endereco {
 
 	public void setEstado(String estado) {
 		this.estado = estado;
-	}
-
-	public boolean isAtivo() {
-		return ativo;
-	}
-
-	public void setAtivo(boolean ativo) {
-		this.ativo = ativo;
 	}
 
 }

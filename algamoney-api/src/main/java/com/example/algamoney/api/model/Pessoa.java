@@ -11,20 +11,23 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@Table(name="pessoa")
-public class Pessoa implements Serializable{
-	
+@Table(name = "pessoa")
+public class Pessoa implements Serializable {
+
 	private static final long serialVersionUID = 8935501109034290521L;
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long codigo;
-	
+
 	@NotNull
 	private String nome;
-	
+
 	@Embedded
 	private Endereco endereco;
+
+	@NotNull
+	private boolean ativo;
 
 	public Long getCodigo() {
 		return codigo;
@@ -48,6 +51,14 @@ public class Pessoa implements Serializable{
 
 	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
+	}
+
+	public boolean isAtivo() {
+		return ativo;
+	}
+
+	public void setAtivo(boolean ativo) {
+		this.ativo = ativo;
 	}
 
 	@Override
@@ -75,7 +86,4 @@ public class Pessoa implements Serializable{
 		return true;
 	}
 
-	
-	
-	
 }

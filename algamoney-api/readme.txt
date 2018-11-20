@@ -1,2 +1,2 @@
-3.11
-Desafio: Criando o cadastro de pessoa
+4.1
+Removendo pessoa com DELETE
