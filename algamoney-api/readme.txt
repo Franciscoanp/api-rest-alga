@@ -1,2 +1,2 @@
-4.1
-Removendo pessoa com DELETE
+4.2
+Sobre atualização de recursos REST
