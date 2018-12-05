@@ -1,2 +1,1 @@
-4.2
-Sobre atualização de recursos REST
+5.1 criando a migração e entidade de lançamento
